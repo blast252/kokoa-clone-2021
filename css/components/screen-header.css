@@ -25,3 +25,49 @@
 .screen-header__icons .fa-cog:hover {
   animation: rotateCog 1s linear infinite;
 }
+
+@keyframes rotatoSearch {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+.screen-header__icons .fa-search:hover {
+  animation: rotatoSearch 1s linear forwards;
+}
+
+@keyframes rotatoComment {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: translateX(5px) scale(1.1);
+  }
+  50% {
+    transform: translateX(0) scale(1.2);
+  }
+  75% {
+    transform: translateX(-5px) scale(1.1);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.screen-header__icons .fa-comment-dots:hover {
+  will-change: transform;
+  animation: rotatoComment 2s linear infinite;
+}
+
+@keyframes rotatoMusic {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.screen-header__icons .fa-music:hover {
+  animation: rotatoMusic 1s linear infinite;
+}
