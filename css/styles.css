@@ -16,6 +16,7 @@
 @import "./screens/settings.css";
 @import "./screens/chat.css";
 @import "./components/no-mobile.css";
+@import "./screens/splash-screen.css";
 
 body {
   color: #2e363e;
